@@ -8,7 +8,7 @@ import time so that repeated calls within a session do not reload weights.
 from faster_whisper import WhisperModel
 
 print("Initializing Whisper model…")
-_model = WhisperModel("tiny", device="cpu", compute_type="int8")
+_model = WhisperModel("base", device="cpu", compute_type="int8")
 
 
 def transcribe_audio(audio_path: str) -> str:
